@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link  href="style.css" rel="styleSheet">
+    <title>Мой Блог</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">Мой Блог</h1>
+
+
+    <form class="form-inline">
+        <div class="form-group" style="margin-bottom: 20px;">
+            <h3>Добавить пост: </h3>
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+            <label class="sr-only" for="inputTitle">Заголовок</label>
+            <input type="text" class="form-control" id="inputTitle" placeholder="Заголовок">
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+            <label class="sr-only" for="inputDescription">Описание</label>
+            <input type="text" class="form-control" id="inputDescription" placeholder="Описание">
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+            <label class="sr-only" for="inputText">Текст</label>
+            <input type="text" class="form-control" id="inputText" placeholder="Текст">
+        </div>
+<!--        <div class="checkbox">-->
+<!--            <label><input type="checkbox"> Запомнить</label>-->
+<!--        </div>-->
+        <button class="btn btn-primary" onclick="addPost()">Сохранить</button>
+    </form>
+
+
+    <div class="row mt-4" id="posts-container">
+        <!-- Здесь будут карточки постов -->
+    </div>
+
+    <form class="form-inline">
+        <div class="form-group" style="margin-bottom: 20px;">
+            <h3>Изменить пост: </h3>
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+            <label class="sr-only" for="selectTitle">Заголовок</label>
+            <input type="text" class="form-control" id="selectTitle" placeholder="Заголовок">
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+            <label class="sr-only" for="selectDescription">Описание</label>
+            <input type="text" class="form-control" id="selectDescription" placeholder="Описание">
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+            <label class="sr-only" for="selectText">Текст</label>
+            <input type="text" class="form-control" id="selectText" placeholder="Текст">
+        </div>
+        <!--        <div class="checkbox">-->
+        <!--            <label><input type="checkbox"> Запомнить</label>-->
+        <!--        </div>-->
+        <button class="btn btn-primary" onclick="updatePost()">Сохранить</button>
+    </form>
+
+</div>
+<script type="text/javascript" src="/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
